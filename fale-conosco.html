@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco - Cartão Amas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <style>
+        /* Estilos específicos para a página Fale Conosco */
+        .page-title-section {
+            background-color: #0F286F; /* Azul escuro da marca */
+            color: white;
+            padding: 2em 20px;
+            text-align: center;
+        }
+        .page-title-section h1 {
+            font-size: 2.8em;
+            margin: 0;
+            color: #FF5A00; /* Laranja para destaque no título */
+        }
+        .contact-container-main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .contact-info-column, .contact-form-column {
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .contact-info-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .contact-form-column {
+            flex: 2;
+            min-width: 300px;
+        }
+        .contact-info-column h2, .contact-form-column h2 {
+            color: #00509e; /* Azul mais escuro */
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        .contact-info-column p, .contact-info-column address {
+            font-size: 1.1em;
+            line-height: 1.7;
+            color: #333333;
+            margin-bottom: 15px;
+        }
+        .contact-info-column strong {
+            color: #0F286F;
+        }
+        .contact-form-column label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333333;
+        }
+        .contact-form-column input[type="text"],
+        .contact-form-column input[type="email"],
+        .contact-form-column input[type="tel"],
+        .contact-form-column select,
+        .contact-form-column textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+        .contact-form-column textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .contact-form-column button[type="submit"] {
+            background-color: #FF5A00; /* Laranja */
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form-column button[type="submit"]:hover {
+            background-color: #e04e00;
+        }
+        .trabalhe-conosco-section, .ouvidoria-section {
+            background-color: #f4f7f6; /* Fundo cinza claro para seções adicionais */
+            padding: 40px 20px;
+            margin-top: 30px;
+        }
+        .trabalhe-conosco-section .container, .ouvidoria-section .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .trabalhe-conosco-section h2, .ouvidoria-section h2 {
+            color: #0F286F;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        .trabalhe-conosco-section p, .ouvidoria-section p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            color: #333333;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .map-container {
+            margin-top: 20px;
+            height: 300px; /* Ajuste conforme necessário */
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html"><img src="assets/img/logo-amas-sem-fundo.png" alt="Cartão Amas Logo" class="logo"></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="nossos-planos.html">Nossos Planos</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+            <li><a href="agendamento.html">Agendamento</a></li>
+            <li><a href="fale-conosco.html">Fale Conosco</a></li>
+            <li><a href="anexos.html">Anexos</a></li>
+             <li><a href="https://www.cartaoamas.com.br/AliancaAppNet2/Site/autenticacao/login?t=cpf" target="_blank" class="nav-links-btn">Boleto</a></li> <!-- Link placeholder -->
+            <li><a href="https://www.cartaoamas.com.br/AliancaAppNet2/Site/site" target="_blank" class="nav-links-btn">Login</a></li>   <!-- Link placeholder -->
+        </ul>
+    </header>
+
+    <section class="page-title-section">
+        <h1>Fale Conosco</h1>
+        <p style="font-size: 1.2em; color: #f0f0f0;">Estamos aqui para ajudar! Entre em contato para dúvidas, sugestões ou mais informações.</p>
+    </section>
+
+    <main class="contact-container-main">
+        <div class="contact-info-column">
+            <h2>Nossos Contatos</h2>
+            <p><strong>Telefone:</strong> (21) 3668-3100</p>
+            <p><strong>E-mail:</strong> <a href="mailto:faleconosco@cartaoamas.com.br" style="color: #FF5A00;">faleconosco@cartaoamas.com.br</a></p>
+            
+            <h3 style="color: #00509e; margin-top: 30px; margin-bottom:10px;">Unidades de Atendimento:</h3>
+            <address>
+                <strong>Duque de Caxias:</strong><br>
+                Rua Doutor Arruda Negreiros, 11 - Centro<br>
+                Duque de Caxias - RJ - CEP: 25020-300<br>
+                <em>Segunda à Sexta: 7:30h às 17:00</em>
+            </address>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.394070200768!2d-43.31100058503696!3d-22.78799908507191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997b0f4a7e8f8d%3A0x8f775f2f153853dd!2sR.%20Dr.%20Arruda%20Negreiros%2C%2011%20-%20Centro%2C%20Duque%20de%20Caxias%20-%20RJ%2C%2025020-300!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <address style="margin-top:20px;">
+                <strong>São João de Meriti:</strong><br>
+                Avenida Automóvel Clube, 63 - Centro<br>
+                São João de Meriti - RJ - CEP: 25515-125<br>
+                <em>Segunda à Sexta: 7h às 17:00 | Sábado: 7h às 12:00</em>
+            </address>
+            <div class="map-container">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.665084095883!2d-43.37176868503715!3d-22.777739985077423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997b6d97870a9f%3A0x52846a3808a1f897!2sAv.%20Autom%C3%B3vel%20Clube%2C%2063%20-%20Centro%2C%20S%C3%A3o%20Jo%C3%A3o%20de%20Meriti%20-%20RJ%2C%2025515-125!5e0!3m2!1spt-BR!2sbr!4v1620000000001!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <div class="contact-form-column">
+            <h2>Envie sua Mensagem</h2>
+            <p>Preencha o formulário abaixo e nossa equipe entrará em contato o mais breve possível.</p>
+            <form action="send-email.php" method="POST">
+                <div>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="telefone">Telefone (com DDD):</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+                <div>
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione o assunto...</option>
+                        <option value="Dúvidas sobre planos">Dúvidas sobre planos</option>
+                        <option value="Informações de Contrato">Informações de Contrato</option>
+                        <option value="Agendamentos">Agendamentos</option>
+                        <option value="Sugestões">Sugestões</option>
+                        <option value="Reclamações">Reclamações</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Enviar Mensagem</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <section class="trabalhe-conosco-section">
+        <div class="container">
+            <h2>Trabalhe Conosco</h2>
+            <p>Faça parte do <strong>GRUPO ATHENAPAR</strong> e construa uma carreira de sucesso no segmento de Saúde! Se você é um profissional dedicado e busca oportunidades de crescimento, envie seu currículo.</p>
+            <p>Envie para o e-mail: <a href="mailto:trabalheconosco@cartaoamas.com.br" style="color: #FF5A00; font-weight:bold;">trabalheconosco@cartaoamas.com.br</a></p>
+            <p>Analisaremos seu perfil e, caso haja vagas alinhadas às suas qualificações e experiência, entraremos em contato. Agradecemos seu interesse em fazer parte da nossa equipe!</p>
+        </div>
+    </section>
+
+    <section class="ouvidoria-section">
+        <div class="container">
+            <h2>Ouvidoria Cartão Amas</h2>
+            <p>A Ouvidoria é um canal de segunda instância, dedicado a analisar e resolver demandas que não foram solucionadas satisfatoriamente pelos nossos canais regulares de atendimento. Nossa missão é garantir que seus direitos como cliente sejam respeitados, atuando com independência, imparcialidade e autonomia, sempre em conformidade com os contratos e as normas vigentes.</p>
+            <p>Antes de acionar a Ouvidoria, por favor, certifique-se de que já tentou resolver sua questão através dos nossos canais primários de Fale Conosco.</p>
+            <p><strong>Contato da Ouvidoria:</strong></p>
+            <p>Telefone: <strong>(21) 3668-3110</strong></p>
+            <p>E-mail: <a href="mailto:ouvidoria@cartaoamas.com.br" style="color: #FF5A00; font-weight:bold;">ouvidoria@cartaoamas.com.br</a></p>
+        </div>
+    </section>
+
+ <div class="whatsapp-float">
+        <a href="https://wa.me/552136683100" target="_blank" title="Fale Conosco pelo WhatsApp">
+            <img src="assets/img/whatsapp.png" alt="WhatsApp" style="width:25px; height:25px; vertical-align: middle; margin-right: 5px;">WhatsApp
+        </a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="coluna">
+                <h4>Cartão Amas</h4>
+                <img src="assets/img/logo-amas-sem-fundo.png" alt="Logo Amas Rodapé" style="max-width: 150px; margin-bottom: 10px;">
+                <p>Cuidando da sua saúde com carinho, economia e sem burocracia.</p>
+            </div>
+            <div class="coluna">
+                <h4>Mapa do Site</h4>
+                <ul class="mapa-site">
+                    <li><a href="agendamento.html" class="mapa-link">Agendamento</a></li>
+                    <li><a href="anexos.html" class="mapa-link">Anexos</a></li>
+                    <li><a href="https://www.cartaoamas.com.br/AliancaAppNet2/Site/autenticacao/login?t=cpf" class="mapa-link">Boleto</a></li>
+                    <li><a href="fale-conosco.html" class="mapa-link">Fale Conosco</a></li>
+                    <li><a href="nossos-planos.html" class="mapa-link">Nossos Planos</a></li>
+                    <li><a href="https://www.cartaoamas.com.br/AliancaAppNet2/Site/site" class="mapa-link">Login</a></li>
+                    <li><a href="parceiros.html" class="mapa-link">Parceiros</a></li>
+                    
+                    
+                    
+                </ul>
+            </div>
+            <div class="coluna">
+                <h4>Contato</h4>
+                <p><strong>Telefone:</strong> (21) 3668-3100</p>
+                <p>Dias úteis: 7:00 às 17:00</p>
+                <p>Sábados: 7:00 às 12:00</p>
+                <p><strong>E-mail:</strong> faleconosco@cartaoamas.com.br</p>
+                <div class="social-icons" style="margin-top: 15px;">
+                    <a href="https://www.facebook.com/cartaoamas" target="_blank"><img src="assets/img/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/cartaoamas/" target="_blank"><img src="assets/img/instagram.png" alt="Instagram"></a>
+                    <a href="https://wa.me/552136683100" target="_blank"><img src="assets/img/whatsapp.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+            <div class="coluna">
+                <h4>Aplicativo Amas</h4>
+                <p>Baixe nosso app e tenha todas as facilidades na palma da sua mão!</p>
+                <a href="https://play.google.com/store/apps/details?id=br.com.amasmultisaude" target="_blank" style="margin-right:10px;"><img src="assets/img/loja-android.png" alt="Google Play" style="height: 40px; margin-top:10px;"></a>
+                <a href="https://apps.apple.com/br/app/amas/id1640587993" target="_blank"> <img src="assets/img/loja-ios.png" alt="App Store" style="height: 40px; margin-top:10px;"></a>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-last">
+        <p style="margin-top: 0px;">CNPJ 31.798.999/0001-90 Copyright © 2025 AMAS MULTI SAUDE LTDA.</p>
+        <p>Desenvolvido por C L Serviços de tecnologia</p>
+    </div>
+
+    <script src="assets/scripts/main.js"></script> <!-- Para carrossel e outras interações -->
+</body>
+</html>

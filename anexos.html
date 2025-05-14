@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anexos e Documentos - Cartão Amas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <style>
+        /* Estilos específicos para a página Anexos */
+        .page-title-section {
+            background-color: #0F286F; /* Azul escuro da marca */
+            color: white;
+            padding: 2em 20px;
+            text-align: center;
+        }
+        .page-title-section h1 {
+            font-size: 2.8em;
+            margin: 0;
+            color: #FF5A00; /* Laranja para destaque no título */
+        }
+        .anexos-container-main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .anexos-container-main h2 {
+            color: #00509e; /* Azul mais escuro */
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .anexos-list {
+            list-style: none;
+            padding: 0;
+        }
+        .anexos-list li {
+            margin-bottom: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            transition: box-shadow 0.3s ease;
+        }
+        .anexos-list li:hover {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .anexos-list a {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: #333333;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+        .anexos-list a:hover {
+            background-color: #f8f9fa;
+            color: #FF5A00;
+        }
+        .anexos-list a .icon {
+            margin-right: 15px;
+            font-size: 1.5em; /* Tamanho do ícone */
+            color: #FF5A00; /* Cor do ícone */
+        }
+        .anexos-list a .file-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .anexos-list a .file-name {
+            font-weight: bold;
+        }
+        .anexos-list a .file-description {
+            font-size: 0.9em;
+            color: #777777;
+        }
+        .cta-section-anexos {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+        .cta-section-anexos p {
+            font-size: 1.1em;
+            color: #333333;
+            margin-bottom: 15px;
+        }
+        .cta-button-anexos {
+            background-color: #0F286F;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+        .cta-button-anexos:hover {
+            background-color: #003d7a;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html"><img src="assets/img/logo-amas-sem-fundo.png" alt="Cartão Amas Logo" class="logo"></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="nossos-planos.html">Nossos Planos</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+            <li><a href="agendamento.html">Agendamento</a></li>
+            <li><a href="fale-conosco.html">Fale Conosco</a></li>
+            <li><a href="anexos.html">Anexos</a></li>
+             <li><a href="https://www.cartaoamas.com.br/AliancaAppNet2/Site/autenticacao/login?t=cpf" target="_blank" class="nav-links-btn">Boleto</a></li> <!-- Link placeholder -->
+            <li><a href="https://www.cartaoamas.com.br/AliancaAppNet2/Site/site" target="_blank" class="nav-links-btn">Login</a></li>   <!-- Link placeholder -->
+        </ul>
+    </header>
+
+    <section class="page-title-section">
+        <h1>Anexos e Documentos Importantes</h1>
+        <p style="font-size: 1.2em; color: #f0f0f0;">Acesse aqui os termos, regulamentos e outros documentos do Cartão Amas.</p>
+    </section>
+
+    <main class="anexos-container-main">
+        <h2>Documentos Disponíveis</h2>
+        <ul class="anexos-list">
+            <li>
+                <a href="/assets/docs/termo-de-contrato.pdf" download> <!-- Substituir # pelo caminho real do arquivo -->
+                    <span class="icon">&#128196;</span> <!-- Ícone de documento/pasta -->
+                    <span class="file-info">
+                        <span class="file-name">Termo de Adesão ao Cartão Amas</span>
+                        <span class="file-description">Contrato completo com os termos e condições do seu pacote de benefícios. (PDF)</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/assets/docs/regulamento.pdf" download>
+                    <span class="icon">&#128196;</span>
+                    <span class="file-info">
+                        <span class="file-name">Regulamento Geral de Uso dos Benefícios</span>
+                        <span class="file-description">Detalhes sobre a utilização dos serviços e benefícios inclusos. (PDF)</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/assets/docs/anexo-1.pdf" download>
+                    <span class="icon">&#128196;</span>
+                    <span class="file-info">
+                        <span class="file-name">Anexo I - Tabela de Coparticipação</span>
+                        <span class="file-description">Valores de referência para coparticipação em consultas e exames. (PDF)</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/assets/docs/anexo-2.pdf" download>
+                    <span class="icon">&#128196;</span>
+                    <span class="file-info">
+                        <span class="file-name">Anexo II - Rede Credenciada Principal</span>
+                        <span class="file-description">Lista dos principais parceiros e locais de atendimento. (PDF)</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/assets/docs/anexo-3.pdf" download>
+                    <span class="icon">&#128196;</span>
+                    <span class="file-info">
+                        <span class="file-name">Anexo III - Rede Credenciada Principal</span>
+                        <span class="file-description">Lista dos principais parceiros e locais de atendimento. (PDF)</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+            
+             <!--  <a href="#" download>
+                    <span class="icon">&#128196;</span>
+                    <span class="file-info">
+                        <span class="file-name">Política de Privacidade e Uso de Dados</span>
+                        <span class="file-description">Como tratamos e protegemos suas informações pessoais. (PDF)</span>
+                    </span>
+                </a>
+            </li>
+                --> 
+            <!-- Adicionar mais itens conforme necessário -->
+        </ul>
+
+        <div class="cta-section-anexos">
+            <p>Não encontrou o que procurava ou precisa de ajuda?</p>
+            <a href="fale-conosco.html" class="cta-button-anexos">Entre em Contato</a>
+        </div>
+    </main>
+
+    <div class="whatsapp-float">
+        <a href="https://wa.me/552136683100" target="_blank" title="Fale Conosco pelo WhatsApp">
+            <img src="assets/img/whatsapp.png" alt="WhatsApp" style="width:25px; height:25px; vertical-align: middle; margin-right: 5px;">WhatsApp
+        </a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="coluna">
+                <h4>Cartão Amas</h4>
+                <img src="assets/img/logo-amas-sem-fundo.png" alt="Logo Amas Rodapé" style="max-width: 150px; margin-bottom: 10px;">
+                <p>Cuidando da sua saúde com carinho, economia e sem burocracia.</p>
+            </div>
+            <div class="coluna">
+                <h4>Mapa do Site</h4>
+                <ul class="mapa-site">
+                    <li><a href="agendamento.html" class="mapa-link">Agendamento</a></li>
+                    <li><a href="anexos.html" class="mapa-link">Anexos</a></li>
+                    <li><a href="https://www.cartaoamas.com.br/AliancaAppNet2/Site/autenticacao/login?t=cpf" class="mapa-link">Boleto</a></li>
+                    <li><a href="fale-conosco.html" class="mapa-link">Fale Conosco</a></li>
+                    <li><a href="nossos-planos.html" class="mapa-link">Nossos Planos</a></li>
+                    <li><a href="https://www.cartaoamas.com.br/AliancaAppNet2/Site/site" class="mapa-link">Login</a></li>
+                    <li><a href="parceiros.html" class="mapa-link">Parceiros</a></li>
+                    
+                    
+                    
+                </ul>
+            </div>
+            <div class="coluna">
+                <h4>Contato</h4>
+                <p><strong>Telefone:</strong> (21) 3668-3100</p>
+                <p>Dias úteis: 7:00 às 17:00</p>
+                <p>Sábados: 7:00 às 12:00</p>
+                <p><strong>E-mail:</strong> faleconosco@cartaoamas.com.br</p>
+                <div class="social-icons" style="margin-top: 15px;">
+                    <a href="https://www.facebook.com/cartaoamas" target="_blank"><img src="assets/img/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/cartaoamas/" target="_blank"><img src="assets/img/instagram.png" alt="Instagram"></a>
+                    <a href="https://wa.me/552136683100" target="_blank"><img src="assets/img/whatsapp.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+            <div class="coluna">
+                <h4>Aplicativo Amas</h4>
+                <p>Baixe nosso app e tenha todas as facilidades na palma da sua mão!</p>
+                <a href="https://play.google.com/store/apps/details?id=br.com.amasmultisaude" target="_blank" style="margin-right:10px;"><img src="assets/img/loja-android.png" alt="Google Play" style="height: 40px; margin-top:10px;"></a>
+                <a href="https://apps.apple.com/br/app/amas/id1640587993" target="_blank"> <img src="assets/img/loja-ios.png" alt="App Store" style="height: 40px; margin-top:10px;"></a>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-last">
+        <p style="margin-top: 0px;">CNPJ 31.798.999/0001-90 Copyright © 2025 AMAS MULTI SAUDE LTDA.</p>
+        <p>Desenvolvido por C L Serviços de tecnologia</p>
+    </div>
+
+    <script src="assets/scripts/main.js"></script> <!-- Para carrossel e outras interações -->
+</body>
+</html>
+

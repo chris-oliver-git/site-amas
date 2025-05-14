@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Planos - Cartão Amas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <style>
+        /* Estilos específicos para a página Nossos Planos */
+        .page-title-section {
+            background-color: #0F286F; /* Azul escuro da marca */
+            color: white;
+            padding: 2em 20px;
+            text-align: center;
+        }
+        .page-title-section h1 {
+            font-size: 2.8em;
+            margin: 0;
+            color: #FF5A00; /* Laranja para destaque no título */
+        }
+        .plans-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        .plan-card-detailed {
+            background-color: #FFFFFF;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden; /* Para conter a imagem e o span */
+            height: 100%; /* Garante que os cards na mesma linha tenham a mesma altura */
+        }
+        .plan-card-detailed:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+        .plan-card-detailed img {
+            width: 100%;
+            max-height: 200px; /* Altura máxima para a imagem do plano */
+            object-fit: contain; /* Ou 'cover' dependendo do design desejado */
+            background-color: #f8f9fa; /* Fundo claro para a imagem se não preencher */
+            padding: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .plan-card-detailed .plan-info {
+            padding: 20px;
+            flex-grow: 1; /* Faz esta seção crescer para preencher o espaço */
+        }
+        .plan-card-detailed h3 {
+            color: #00509e; /* Azul mais escuro */
+            font-size: 1.8em;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .plan-card-detailed p {
+            font-size: 1em;
+            color: #555555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .plan-card-detailed .cta-button-plan {
+            background-color: #FF5A00; /* Laranja */
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 0 0 8px 8px; /* Arredonda apenas cantos inferiores se o botão estiver no rodapé do card */
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            display: block; /* Ocupa toda a largura do card */
+            margin-top: auto; /* Empurra para o final do flex container */
+        }
+        .plan-card-detailed .cta-button-plan:hover {
+            background-color: #e04e00;
+        }
+        /* Ajustes no grid-planos para esta página */
+        .grid-planos {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Mais responsivo */
+            gap: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html"><img src="assets/img/logo-amas-sem-fundo.png" alt="Cartão Amas Logo" class="logo"></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="nossos-planos.html">Nossos Planos</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+            <li><a href="agendamento.html">Agendamento</a></li>
+            <li><a href="fale-conosco.html">Fale Conosco</a></li>
+            <li><a href="anexos.html">Anexos</a></li>
+             <li><a href="https://www.cartaoamas.com.br/AliancaAppNet2/Site/autenticacao/login?t=cpf" target="_blank" class="nav-links-btn">Boleto</a></li> <!-- Link placeholder -->
+            <li><a href="https://www.cartaoamas.com.br/AliancaAppNet2/Site/site" target="_blank" class="nav-links-btn">Login</a></li>   <!-- Link placeholder -->
+        </ul>
+    </header>
+
+    <section class="page-title-section">
+        <h1>Conheça Nossos Planos</h1>
+        <p style="font-size: 1.2em; color: #f0f0f0;">Encontre a opção ideal de pacote de benefícios para você e sua família.</p>
+    </section>
+
+    <main class="plans-container">
+        <div class="grid-planos">
+            <a href="planos/amas-24.html" class="plan-card-detailed" style="text-decoration: none;">
+                <img src="assets/img/amas-24.png" alt="Plano AMAS 24">
+                <div class="plan-info">
+                    <h3>Plano AMAS 24</h3>
+                    <p>A cobertura mais completa para sua total tranquilidade, com acesso a uma vasta rede de serviços e especialidades médicas.</p>
+                </div>
+                <span class="cta-button-plan">Ver Detalhes do Plano</span>
+            </a>
+
+            <a href="planos/essencial-familia.html" class="plan-card-detailed" style="text-decoration: none;">
+                <img src="assets/img/essencial-familia.png" alt="Plano Essencial Família">
+                <div class="plan-info">
+                    <h3>Plano Essencial Família</h3>
+                    <p>Proteção e cuidado para toda a sua família, cobrindo as principais necessidades de saúde com um excelente custo-benefício.</p>
+                </div>
+                <span class="cta-button-plan">Ver Detalhes do Plano</span>
+            </a>
+
+            <a href="planos/facil.html" class="plan-card-detailed" style="text-decoration: none;">
+                <img src="assets/img/facil.png" alt="Plano Fácil">
+                <div class="plan-info">
+                    <h3>Plano Fácil</h3>
+                    <p>Acesso prático e econômico a serviços de saúde de qualidade, ideal para quem busca simplicidade e eficiência.</p>
+                </div>
+                <span class="cta-button-plan">Ver Detalhes do Plano</span>
+            </a>
+
+            <a href="planos/integral.html" class="plan-card-detailed" style="text-decoration: none;">
+                <img src="assets/img/integral.png" alt="Plano Integral">
+                <div class="plan-info">
+                    <h3>Plano Integral</h3>
+                    <p>Uma solução equilibrada que oferece ampla cobertura para suas necessidades de saúde diárias e especializadas.</p>
+                </div>
+                <span class="cta-button-plan">Ver Detalhes do Plano</span>
+            </a>
+
+            <a href="planos/especial.html" class="plan-card-detailed" style="text-decoration: none;">
+                <img src="assets/img/especial.png" alt="Plano Especial">
+                <div class="plan-info">
+                    <h3>Plano Especial</h3>
+                    <p>Benefícios diferenciados e acesso a uma rede selecionada para quem busca um cuidado ainda mais exclusivo.</p>
+                </div>
+                <span class="cta-button-plan">Ver Detalhes do Plano</span>
+            </a>
+            
+            <!-- Se houver um plano "Total" ou outros, adicionar aqui seguindo o mesmo modelo -->
+            <!-- Exemplo de card vazio para manter o grid alinhado se o número de planos não for múltiplo de 3 (ou do número de colunas) -->
+            <!-- <div class="plano-card-detailed vazio" style="visibility: hidden;"></div> -->
+        </div>
+    </main>
+
+     <div class="whatsapp-float">
+        <a href="https://wa.me/552136683100" target="_blank" title="Fale Conosco pelo WhatsApp">
+            <img src="assets/img/whatsapp.png" alt="WhatsApp" style="width:25px; height:25px; vertical-align: middle; margin-right: 5px;">WhatsApp
+        </a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="coluna">
+                <h4>Cartão Amas</h4>
+                <img src="assets/img/logo-amas-sem-fundo.png" alt="Logo Amas Rodapé" style="max-width: 150px; margin-bottom: 10px;">
+                <p>Cuidando da sua saúde com carinho, economia e sem burocracia.</p>
+            </div>
+            <div class="coluna">
+                <h4>Mapa do Site</h4>
+                <ul class="mapa-site">
+                    <li><a href="agendamento.html" class="mapa-link">Agendamento</a></li>
+                    <li><a href="anexos.html" class="mapa-link">Anexos</a></li>
+                    <li><a href="https://www.cartaoamas.com.br/AliancaAppNet2/Site/autenticacao/login?t=cpf" class="mapa-link">Boleto</a></li>
+                    <li><a href="fale-conosco.html" class="mapa-link">Fale Conosco</a></li>
+                    <li><a href="nossos-planos.html" class="mapa-link">Nossos Planos</a></li>
+                    <li><a href="https://www.cartaoamas.com.br/AliancaAppNet2/Site/site" class="mapa-link">Login</a></li>
+                    <li><a href="parceiros.html" class="mapa-link">Parceiros</a></li>
+                    
+                    
+                    
+                </ul>
+            </div>
+            <div class="coluna">
+                <h4>Contato</h4>
+                <p><strong>Telefone:</strong> (21) 3668-3100</p>
+                <p>Dias úteis: 7:00 às 17:00</p>
+                <p>Sábados: 7:00 às 12:00</p>
+                <p><strong>E-mail:</strong> faleconosco@cartaoamas.com.br</p>
+                <div class="social-icons" style="margin-top: 15px;">
+                    <a href="https://www.facebook.com/cartaoamas" target="_blank"><img src="assets/img/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/cartaoamas/" target="_blank"><img src="assets/img/instagram.png" alt="Instagram"></a>
+                    <a href="https://wa.me/552136683100" target="_blank"><img src="assets/img/whatsapp.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+            <div class="coluna">
+                <h4>Aplicativo Amas</h4>
+                <p>Baixe nosso app e tenha todas as facilidades na palma da sua mão!</p>
+                <a href="https://play.google.com/store/apps/details?id=br.com.amasmultisaude" target="_blank" style="margin-right:10px;"><img src="assets/img/loja-android.png" alt="Google Play" style="height: 40px; margin-top:10px;"></a>
+                <a href="https://apps.apple.com/br/app/amas/id1640587993" target="_blank"> <img src="assets/img/loja-ios.png" alt="App Store" style="height: 40px; margin-top:10px;"></a>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-last">
+        <p style="margin-top: 0px;">CNPJ 31.798.999/0001-90 Copyright © 2025 AMAS MULTI SAUDE LTDA.</p>
+        <p>Desenvolvido por C L Serviços de tecnologia</p>
+    </div>
+
+    <script src="assets/scripts/main.js"></script> <!-- Para carrossel e outras interações -->
+</body>
+</html>
+
