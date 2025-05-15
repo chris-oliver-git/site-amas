@@ -1,0 +1,78 @@
+.footer {
+    background-color: #001C54;
+    color: white;
+    padding: 30px 20px;
+    border-top: 4px solid #FF5A00;
+    font-size: 14px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .coluna {
+    flex: 1;
+    min-width: 180px;
+    text-align: center;
+  }
+  
+  .footer h4 {
+    color: #FF5A00;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons img {
+    width: 32px;
+    margin-right: 10px;
+    
+  }
+  .social-icons img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .mapa-site {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mapa-site li {
+    margin-bottom: 6px;
+  }
+  
+  .mapa-link {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .mapa-link:hover {
+    transform: translateX(6px);
+    color: #FF5A00;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  
+  .footer-last {
+    margin-top: 3px;
+    background-color:#001841;
+    text-align: center;
+    width: 100%;
+    clear: both;
+    color: white;
+    padding: 10px 10px;
+  }
+
+  
+    
