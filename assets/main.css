@@ -1,0 +1,122 @@
+main{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*MAIN CONTENT ==============================================*/
+main .main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+main .main-content h2{
+    margin-bottom: 2%;
+
+}    
+main .main-content .text {
+    margin-bottom: 10%;
+}  
+main .main-content .text p {
+    width: 85%;
+    font-size: 1.2em;
+    font-weight: 300;
+}    
+/*Imagem planos*/
+.imagem-container {
+    text-align: center;
+    margin: 40px auto;
+  }
+  
+  .imagem-ampliavel {
+    max-width: 90%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  
+  /* Modal em tela cheia */
+  .modal-imagem {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-imagem img {
+    max-width: 75%;
+    max-height: 75%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    cursor: pointer;
+  }
+  .titulo-centro {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    margin-top: 20px;
+    color: #FF5A00;;
+  }
+  /*Agendamento Online*/
+  .app-promo {
+    background: #0F286F;
+    padding: 60px 20px;
+  }
+  
+  .promo-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .promo-texto {
+    flex: 1 1 400px;
+    padding: 20px;
+  }
+  
+  .promo-texto h1 {
+    font-size: 2em;
+    color: #FF5A00;
+    margin-bottom: 20px;
+  }
+  
+  .promo-texto p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .beneficios-app {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .beneficios-app li {
+    font-size: 1em;
+    margin-bottom: 8px;
+  }
+  
+  .botoes-download {
+    display: flex;
+    align-items: center;
+  }
+  
+  .promo-imagem {
+    flex: 1 1 100px;
+    padding: 20px;
+    text-align: center;
+  }
+  
